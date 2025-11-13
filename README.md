@@ -9,4 +9,4 @@ Deistroc Limited is a Kenya-based supply service that essentially acts as a midd
 ### Landing Page For Deistroc Limited
 
 Below is the landing page for the website:
-https://tomlutherke.github.io/kastra-intranational-supply-services/
+https://tomlutherke.github.io/deistrocsite/
