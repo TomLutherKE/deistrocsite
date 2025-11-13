@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Order List</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="frontend/assets/css/main.css" />
+        <script src="frontend/assets/js/jquery.min.js"></script>
+        <!-- Additional script to fetch and display orders -->
+        <script>
+            $(document).ready(function() {
+    $.getJSON('data.json', function(data) {
+        // Assuming data.json contains an array of orders
+        $.each(data.orders, function(i, order) {
+            let { orderId, customerName, orderDetails, status } = order;
+            $('#order-list').append(`<tr><td>${orderId}</td><td>${customerName}</td><td>${orderDetails}</td><td>${status}</td></tr>`);
+        });
+    });
+});
+
+        </script>
+    </head>
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
+                    <!-- Header -->
+                    <header id="header">
+									<a href="index.html" class="logo"><strong>KASTRA INTRANATIONAL SUPPLY SERVICES</strong></a>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+									</ul>
+								</header>
+
+                    <!-- Content -->
+                    <section>
+                        <header class="main">
+                            <h1>Order List</h1>
+                        </header>
+
+                        <p>Below is the list of all placed orders.</p>
+                        <hr class="major" />
+						
+                        <!-- Order List -->
+                                  <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Customer Name</th>
+                  <th>Order Details</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="order-list">
+
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4"></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+<hr class="major" />
+									
+									<ul class="actions">
+														<li><a href="placeorder.html" class="button large">Go To Place Order</a></li>
+														<li><a href="index.html" class="button primary large">Return To Home Page</a></li>
+														<li><a href="contactus.html" class="button large">Contact Us</a></li>
+													</ul>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div id="sidebar">
+						<div class="inner">
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Main Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Home Page</a></li>
+										<li>
+											<span class="opener">Goods Supplied</span>
+											<ul>
+												<li><a href="cs.html">Construction Supplies</a></li>
+												<li><a href="epi.html">Electrical and Plumbing Items</a></li>
+												<li><a href="gos.html">General Office Supplies</a></li>
+												<li><a href="lce.html">Laboratory Chemicals and Equipment</a></li>
+												<li><a href="asm.html">Aircraft Supplies and Maintenance</a></li>
+											</ul>
+										</li>
+										<li><a href="placeorder.html">Place Order</a></li>
+										<li><a href="placedorders.html">Outstanding Orders</a></li>
+										<li><a href="privacypolicy.html">Privacy Policy</a></li>
+										<li><a href="aboutus.html">About Us!</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contact Us!</h2>
+									</header>
+									<div class="mini-posts">
+										<article>
+											<a class="image"><img src="frontend/images/pic09.jpg" alt="" /></a>
+											<p>Our team is available to assist you Monday through Friday from 9am-5pm EST.</p>
+										</article>
+									</div>
+									<ul class="actions">
+										<li><a href="contactus.html" class="button">More</a></li>
+									</ul>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">deistroclimited@gmail.com</a></li>
+										<li class="icon solid fa-phone">(254) 707-387128</li>
+										<li class="icon solid fa-home">9374 Nice Lane #2663<br />
+										Nairobi, KE 55152-00200</li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Deistroc Limited. All rights reserved.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+        </div>
+        <!-- Scripts -->
+        <script src="frontend/assets/js/jquery.min.js"></script>
+			<script src="frontend/assets/js/browser.min.js"></script>
+			<script src="frontend/assets/js/breakpoints.min.js"></script>
+			<script src="frontend/assets/js/util.js"></script>
+			<script src="frontend/assets/js/main.js"></script>
+
+    </body>
+</html>
+

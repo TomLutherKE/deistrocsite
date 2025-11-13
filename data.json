@@ -1,0 +1,35 @@
+{
+  "orders": [
+    {
+      "orderId": "1001",
+      "customerName": "Alice Johnson",
+      "orderDetails": "Office Supplies - Pens, Notebooks",
+      "status": "open"
+    },
+    {
+      "orderId": "1002",
+      "customerName": "Bob Smith",
+      "orderDetails": "Technology Products - Laptops, Monitors",
+      "status": "pending"
+    },
+    {
+      "orderId": "1003",
+      "customerName": "Carol White",
+      "orderDetails": "Furniture and Equipment - Office Chairs, Desks",
+      "status": "shipping"
+    },
+    {
+      "orderId": "1004",
+      "customerName": "Dave Brown",
+      "orderDetails": "Cleaning and Janitorial Supplies - Disinfectants, Wipes",
+      "status": "closed"
+    },
+    {
+      "orderId": "1005",
+      "customerName": "Eva Green",
+      "orderDetails": "Printing and Graphic Design Services - Business Cards, Banners",
+      "status": "closed"
+    }
+  ]
+}
+
